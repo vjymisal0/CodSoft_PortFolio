@@ -4,61 +4,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Vijay Portfolio</title>
 </head>
 
 <body>
-    <div class="main">
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="https://github.com/vjymisal0" class="nav-logo">Vijay Misal</a>
+            </div>
+            <div class="nav-menu" id="nav_menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#certi" class="nav-link">Certificates</a></li>
+                    <!-- <li class="nav-item"><a href="#work" class="nav-link">Work</a></li> -->
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact </a></li>
 
-        <div class="navbar">
-            <img class="logo" src="img/logo.png" alt="logo" class="logo">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav_toggle">
+                <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+    </header>
+    <main class="l-main main-grid">
+        <section class="home bd-grid" id="home">
+            <div class="home-data">
+                <h1 class="home-title">Hi,<br>I am <span class="home-title-color">Vijay</span><br>Backend Engineer
+                </h1>
+                <a href="#contact" class="button">Contact</a>
+            </div>
+            <div class="home-social">
+                <a href="https://www.linkedin.com/in/vijay-misal-b4b19b222/" target="_blank" class="home-social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/vjy_.07/" class="home-social-icon" target="_blank"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com/me_vijay07" class="home-social-icon" target="_blank"><i
+                        class='bx bxl-twitter'></i></a>
+                <a href="https://github.com/vjymisal0" target="_blank" class="home-social-icon"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+            <div class="home-img">
+                <img src="./assets/img/vijay.png" alt="" class="src">
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about-container bd-grid">
+                <div class="about-img">
+                    <img src="./assets/img/about.png" alt="Can't load image">
+                </div>
+                <div>
+                    <h2 class="about-subtitle">I am Vijay Misal</h2>
+                    <p class="about-text">A Backend Engineer enthusiast in node js & express js. Currently I am project
+                        intern <a href="https://www.codsoft.in/" target="_blank">@CodSoft</a> where I'll be completing 3
+                        levels of projects in Web Development domain!</p>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container bd-grid">
+                <div>
+                    <h2 class="skills-subtitle">Professional Skills</h2>
+                    <p class="skills-text">A young tech aspirant!</p>
+
+                    <div class="skills-data">
+                        <div class="skill-names">
+                            <i class='bx bxl-html5 skills-icon'></i>
+                            <div class="skill-name">HTML5</div>
+                        </div>
+                        <div>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skills-bar skills-html"></div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skill-names">
+                            <i class='bx bxl-css3 skills-icon'></i>
+                            <div class="skill-name">CSS3</div>
+                        </div>
+                        <div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skills-bar skills-css"></div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skill-names">
+                            <i class='bx bxl-javascript skills-icon'></i>
+                            <div class="skill-name">JAVASCRIPT</div>
+                        </div>
+                        <div>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="skills-bar skills-js"></div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skill-names">
+                            <i class='bx bxs-paint skills-icon'></i>
+                            <div class="skill-name">Express JS</div>
+                        </div>
+                        <div>
+                            <span class="skill-percentage">50%</span>
+                        </div>
+                        <div class="skills-bar skills-express"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/skills.jpg" alt="Can't load" class="skills-img">
+                </div>
+            </div>
+        </section>
+        <section class="contact section" id="certi">
+            <h2 class="section-title">Certificates</h2>
+            <div class="contact-container bd-grid">
+                <div class="work-container bd-grid">
+                    <div class="work-img">
+                        <img src="assets/img/CertificateHackerrankBasicJava.png"" alt="">
+                    </div>
+                    <br>
+                    <div class=" work-img">
+                        <img src="assets/img/certificate.jpg" alt="">
+                    </div>
+                    <div class="work-img">
+                        <img src="assets/img/C&C++.jpg" alt="">
+                    </div>
+                    <br>
+                    <div class="work-img">
+                        <img src="assets/img/HTMLCertificate VIjayGL.png" alt="">
+                    </div>
+                    <div class="work-img">
+                        <img src="assets/img/" alt="">
+                    </div>
+                </div>
+                <h2 class="section-title">Contact</h2>
+
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Name" class="contact-input">
+                    <input type="mail" placeholder="Email" class="contact-input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact-input"></textarea>
+                    <input type="text" value="Submit" class="contact-button button"
+                        onclick="alert('This option will be available soon')">
+                </form>
+            </div>
+        </section>
+        <!-- <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+            <div class="work-container bd-grid">
+                <div class="work-img" style="max-width: 100%;">
+                    <a href="https://clubpratibimb.in/"><img class="fillheight" src="./assets/img/certificate.jpg"
+                            alt=""></a>
+                </div>
+                <div class="work-img">
+                    <a href=""><img src="assets/img/C&C++.jpg" alt=""></a>
+                </div>
+                <div class="work-img">
+                    <img class="fillheight" src=" alt="">
+                </div>
+                <div class=" work-img">
+                    <img class="fillheight" src="img/Screenshot 2021-09-11 at 01-35-01 To-dos List.png" alt="">
+                </div>
+                <div class="work-img">
+                    <a href=""><img class="fillheight"
+                            src="img/Screenshot 2021-09-11 at 00-01-40 Donate.png" alt=""></a>
+                </div>
+                <div class="work-img">
+                    <img class="fillheight" src="img/Screenshot_2021-04-14 iChat.png" alt="">
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+    <footer class="footer" id="contact">
+        <div class="footer__social">
+            <a href="https://github.com/vjymisal0" target="_blank" class="footer__icon"><i
+                    class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/vjy_.07/" target="_blank" class="footer__icon"><i
+                    class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vijay-misal-b4b19b222/" target="_blank" class="footer__icon"><i
+                    class="bx bxl-linkedin"></i></a>
+            <a href="https://twitter.com/me_vijay07" target="_blank" class="footer__icon"><i
+                    class="bx bxl-twitter"></i></a>
         </div>
-        <div class="info">
-            <h3>Hi, I'm <span>Vijay</span>.</h3>
-            <h1><span>W</span>EB <span>D</span>ESIGNER</h1>
-            <h3>A passionate backend engineer <br> from India.
-                I code <br>in node js, express js<br></h3>
-            <div class="social">
-                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-                <a href="#"><img src="img/instagram.png" alt="instagram"></a>
-                <a href="https://twitter.com/me_vijay07" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
-                <a href="https://www.linkedin.com/in/vijay-misal-b4b19b222/" target="_blank"><img src="img/linkedin.png"
-                        alt="linkedin"></a>
-            </div>
+        <p>A Portfolio Website</p>
+        <p>&copy All rights reserved.</p>
+    </footer>
 
-            <img class="person" src="img/vijay.png" alt="person">
 
-            <h1>Programming Proficiency</h1>
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-            <!-- HTML Progress -->
-            <p class="proficiency-label">HTML (80%)</p>
-            <div class="progress-bar">
-                <div class="progress">80%</div>
-            </div>
-
-            <!-- CSS Progress -->
-            <p class="proficiency-label">CSS (70%)</p>
-            <div class="progress-bar">
-                <div class="progress">70%</div>
-            </div>
-
-            <!-- JavaScript Progress -->
-            <p class="proficiency-label">JavaScript (99%)</p>
-            <div class="progress-bar">
-                <div class="progress">99%</div>
-            </div>
-        </div>
-    </div>
+    <!-- Main js -->
+    <!-- <script src="script.js"></script> -->
 </body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </html>
