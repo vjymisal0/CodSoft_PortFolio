@@ -1,3 +1,3 @@
 # CODSOFT_WebDev_Level1
 Portfolio Project with basic HTML &amp; CSS
-<h1>Visit:<a href="https://vjymisal0.github.io/CODSOFT_WebDev_Level1/#contact">Portfolio</a></h1>
+<h1>Visit:<a href="https://vjymisal0.github.io/CODSOFT_WebDev_Level1">Portfolio</a></h1>
